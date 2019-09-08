@@ -1,0 +1,21 @@
+plugins {
+    id 'com.github.johnrengelman.shadow' version '5.0.0'
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'io.netty:netty-all:4.1.34.Final'
+    implementation 'com.squareup.okhttp3:okhttp:3.14.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.maxmind.geoip2:geoip2:2.12.0'
+    implementation 'com.javadocmd:simplelatlng:1.3.1'
+
+    testImplementation 'junit:junit:4.12'
+}
+
+mainClassName = 'edu.umass.gigapaxos.example.dns.DnsServer'
